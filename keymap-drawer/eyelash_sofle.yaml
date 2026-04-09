@@ -207,8 +207,8 @@ layers:
   - PLAY PAUSE
   - FAST FORWARD
   - $$mdi:volume-off$$
-  - $$mdi:volume-high$$
   - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
