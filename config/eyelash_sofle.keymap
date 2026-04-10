@@ -55,6 +55,11 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
+
+        command_tilde {
+            bindings = <&kp LG(TILDE)>;
+            key-positions = <55 0>;
+        };
     };
 
     macros {
