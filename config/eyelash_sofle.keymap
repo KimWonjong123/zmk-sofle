@@ -45,6 +45,15 @@
         bindings = <&kp F18>, <&kp CAPSLOCK>;
     };
 
+    esc_grave: esc_grave {
+        compatible = "zmk,behavior-mod-morph";
+        label = "ESC_GRAVE";
+        bindings = <&kp ESC>, <&kp GRAVE>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LGUI)>;
+    };
+
     behaviors {
     };
 
@@ -54,11 +63,6 @@
         softoff {
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
-        };
-
-        command_tilde {
-            bindings = <&kp LG(TILDE)>;
-            key-positions = <55 0>;
         };
     };
 
@@ -84,7 +88,7 @@
 
         layer0 {
             bindings = <
-&kp ESC        &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
+&esc_grave     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
 &kp TAB        &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp BSLH
 &f18_capslock  &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp APOS
 &kp LSHFT      &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &kp ENTER
